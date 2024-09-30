@@ -1,0 +1,6 @@
+<div class="upload-container">
+    <label for="pdfUpload" class="upload-label">Anexar Arquivo PDF</label>
+    <input type="file" id="pdfUpload" (change)="onFileSelected($event)" accept="application/pdf" />
+    <p *ngIf="fileName">Arquivo Selecionado: {{ fileName }}</p>
+  </div>
+  
